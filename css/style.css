@@ -43,9 +43,25 @@ body{
 .search{
   height: 25px;
 }
+.profile.bar{
+  border-right: 1px solid #dddddd;
+}
+.profile.bar, .contact {
+  align-items: center;
+  justify-content: center;
+}
 .msg{
   height: 535px;
   overflow: scroll;
+}
+.contact{
+  border-bottom: 1px solid rgb(245, 245, 245) ;
+  border-right: 1px solid rgb(245, 245, 245) ;
+  padding:10px 0;
+}
+.contact:last-of-type{
+  border-bottom: none;
+  
 }
 /* CHAT */
 .top-right{
@@ -114,6 +130,12 @@ position: relative;
   justify-content: center;
   padding: 10px 0;
 }
+.bottom-logo{
+  display: none;
+  align-items: center;
+  margin:0 auto;
+  color: #6b7376;
+}
 @media screen and (min-width:542px) {
   .container{
     display: flex;
@@ -126,8 +148,11 @@ position: relative;
   .col.right{
     width: 90%;
   }
-  .col.right .top-right{
+  .col.right .top-right, .bottom-logo{
     display: flex;
+  }
+  .message{
+    width:60%;
   }
   
 }
@@ -147,6 +172,7 @@ position: relative;
   }
   .d-none{
     display: block;
+    
   }
   .chat{
     height:456px ;

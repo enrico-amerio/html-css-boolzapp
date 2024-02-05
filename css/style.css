@@ -36,12 +36,16 @@ body{
   color: #b1b1b1;
   padding-right: 15px;
 }
+.chat{
+  height:456px ;
+}
 /* MENU */
 .col.left{
   display: none;
 }
 .search{
-  height: 25px;
+  height: 50px;
+  background-color: #eaeaea;
 }
 .profile.bar{
   border-right: 1px solid #dddddd;
@@ -50,8 +54,21 @@ body{
   align-items: center;
   justify-content: center;
 }
-.msg{
-  height: 535px;
+.contact img{
+  width: 50px;
+  margin: 5px 0;
+  
+}
+.search.type{
+  justify-content: center;
+}
+.search.type input{
+  width: 96%;
+  margin: 5px 0;
+
+}
+.old-msg{
+  height: 735px;
   overflow: scroll;
 }
 .contact{
@@ -68,6 +85,9 @@ body{
   background-color: #8edafc;
   align-items: center;
   justify-content: flex-start;
+}
+.notification.bar{
+  height: 80px;
 }
 .notification-icon{
   color: #8edafc;
@@ -87,6 +107,7 @@ body{
 }
 .top-left .avatar{
   margin:0 10px;
+  
 }
 .top-left .last-seen,.notification-text a{
   font-size: 0.5rem;
@@ -169,6 +190,12 @@ body{
   .message{
     width:60%;
   }
+  .bar{
+    height:70px;
+  }
+  .chat{
+    height:665px;
+  }
   
 }
 @media screen and (min-width:992px){
@@ -189,9 +216,7 @@ body{
     display: flex;
     
   }
-  .chat{
-    height:456px ;
-  }
+  
   .msg{
     height: 431px;
   }
@@ -200,5 +225,15 @@ body{
   }
   .profile.bar img{
     margin-left:15px ;
+  }
+  .old-msg{
+    height: 565px;
+    overflow: scroll;
+  }
+  .chat{
+    height:624px;
+  }
+  .contact{
+    
   }
 }

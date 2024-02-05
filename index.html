@@ -4,21 +4,54 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css' integrity='sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==' crossorigin='anonymous'/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
+  
 </head>
 <body>
   <main>
-    <div class="container debug">
+    <div class="container ">
+      <!-- LEFT -->
       <div class="col left debug">
-        <div class="top debug"></div>
-        <div class="top d-none debug"></div>
+        <div class="bar "></div>
+        <div class="bar d-none debug"></div>
         <div class="search d-none debug"></div>
         <div class="msg debug"></div>
       </div>
-      <div class="col right debug">
-        <div class="top debug"></div>
-        <div class="chat debug"></div>
-        <div class="top debug"></div>
+      <!-- RIGHT -->
+      <div class="col right ">
+        <div class="bar d-flex ">
+          <div class="top-left d-flex">
+            <div><img src="img/avatar_1.jpg" alt="avatar" class="avatar"></div>
+            <div class="user">
+              <h5>Michele</h5>
+              <p class="last-seen">Ultimo accesso oggi alle 16:26</p>
+            </div>
+          </div>
+            <div class="top-right d-flex">
+              <spaan class="top-logo"><i class="fa-solid fa-magnifying-glass"></i></spaan>
+              <span class="top-logo"><i class="fa-solid fa-paperclip"></i></span>
+              <span class="top-logo"><i class="fa-solid fa-ellipsis-vertical"></i></span>
+          </div>
+        </div>
+        <div class="chat">
+          <div class="message sent">
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. adipisicing elit. adipisicing elit. adipisicing elit. adipisicing elit. Eaque accusamus magnam laudantium nemo dolor temporibus totam? Animi nemo, dolorum beatae, dignissimos corporis facere nulla repudiandae laudantium alias quasi voluptatem quo.</p>
+            <span class="message-menu"><i class="fa-solid fa-chevron-down"></i></span>
+            <span class="message-time">16:13</span>
+          </div>
+          <div class="message received">
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. adipisicing elit. adipisicing elit. adipisicing elit. adipisicing elit. Eaque accusamus magnam laudantium nemo dolor temporibus totam? Animi nemo, dolorum beatae, dignissimos corporis facere nulla repudiandae laudantium alias quasi voluptatem quo.</p>
+            <span class="message-menu"><i class="fa-solid fa-chevron-down"></i></span>
+            <span class="message-time">16:15</span>
+          </div>
+        </div>
+        <div class="bar d-flex type">
+          <input type="text" placeholder="  Scrivi un messaggio">
+        </div>
       </div>
     </div>
   </main>

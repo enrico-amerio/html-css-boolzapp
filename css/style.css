@@ -63,6 +63,20 @@ body{
   border-bottom: none;
   
 }
+
+.notification{
+  background-color: #8edafc;
+  align-items: center;
+  justify-content: flex-start;
+}
+.notification-icon{
+  color: #8edafc;
+  background-color: white;
+  padding: 8px;
+  border-radius: 50%;
+  margin: 0 15px;
+
+}
 /* CHAT */
 .top-right{
   display: none;
@@ -74,10 +88,11 @@ body{
 .top-left .avatar{
   margin:0 10px;
 }
-.top-left .last-seen{
+.top-left .last-seen,.notification-text a{
   font-size: 0.5rem;
   font-weight: 600;
   color:#8c9294;
+  
 }
 .chat{
   height: 485px;
@@ -86,11 +101,11 @@ body{
   overflow-x: hidden;
 }
 .message{
-width: 70%;
-border-radius: 10px;
-margin-top:10px ;
-font-size: 0.8rem;
-position: relative;
+  width: 70%;
+  border-radius: 10px;
+  margin-top:10px ;
+  font-size: 0.8rem;
+  position: relative;
 }
 .message p{
   padding: 15px;
@@ -171,7 +186,7 @@ position: relative;
     width: 70%;
   }
   .d-none{
-    display: block;
+    display: flex;
     
   }
   .chat{
@@ -179,5 +194,11 @@ position: relative;
   }
   .msg{
     height: 431px;
+  }
+  .profile.bar{
+    justify-content: space-between;
+  }
+  .profile.bar img{
+    margin-left:15px ;
   }
 }

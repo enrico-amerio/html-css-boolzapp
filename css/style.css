@@ -75,7 +75,7 @@ main{
 
 }
 .old-msg{
-  height: 735px;
+  height: calc(100% - 70px);
   overflow: scroll;
 }
 .contact{

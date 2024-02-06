@@ -49,6 +49,7 @@ main{
 /* LEFT */
 .col.left{
   display: none;
+  background-color: white;
 }
 .search{
   height: 50px;
@@ -76,7 +77,7 @@ main{
 }
 .old-msg{
   height: calc(100% - 70px);
-  overflow: scroll;
+  overflow-y: scroll;
 }
 .old-msg-text{
   margin:0 30px 0 15px;
@@ -251,12 +252,9 @@ main{
   }
   .old-msg{
     height: calc(100% - 50px - 70px - 80px);
-    overflow-y: scroll;
+    
   }
   .chat{
     height:calc(100% - 140px);
-  }
-  .contact{
-    
   }
 }

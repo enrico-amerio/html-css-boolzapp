@@ -71,9 +71,20 @@ main{
   justify-content: center;
 }
 .search.type input{
-  width: 96%;
-  margin: 5px 0;
+  width: 80%;
+  margin: 5px 4px 5px 0px;
 
+}
+.search-icon{
+  align-items: center;
+  color: #8c9294;
+  background-color: white;
+  margin: 5px 0 5px 5px;
+  padding: 0px 10px 0px 20px;
+  border-radius: 5px 0 0 5px;
+}
+.search.type input[type=text]{
+  border-radius: 0px 5px 5px 0px;
 }
 .old-msg{
   height: calc(100% - 70px);

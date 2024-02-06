@@ -87,9 +87,9 @@ main{
   color:#bbbec0;
 }
 .contact{
-  border-bottom: 1px solid rgb(245, 245, 245) ;
-  border-right: 1px solid rgb(245, 245, 245) ;
+  border: 1px solid rgb(245, 245, 245) ;
   padding:10px 0;
+  background-color: white;
 }
 .contact:last-of-type{
   border-bottom: none;
@@ -213,7 +213,16 @@ main{
   
 }
 @media screen and (min-width:992px){
-    .container{
+  body{
+    background: linear-gradient(
+    to bottom,
+    #009688 0%,
+    #009688 15%,
+    #d4dbda 15%,
+    #d4dbda 100%
+  );
+  }
+  .container{
     width: 80%;
     height:95%;
     

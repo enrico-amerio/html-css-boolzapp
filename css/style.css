@@ -6,6 +6,13 @@
 body{
   font-family: "Lato";
 }
+main{
+  width: 100%;
+  height:100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 /* UTILITY */
 .debug{
   background-color: aqua;
@@ -116,7 +123,7 @@ body{
   
 }
 .chat{
-  height: 485px;
+  height: calc(100% - 100px);
   background-image: url(../img/mine.jpg);
   overflow-y: scroll;
   overflow-x: hidden;
@@ -194,19 +201,12 @@ body{
     height:70px;
   }
   .chat{
-    height:665px;
+    height:calc(100% - 140px);
   }
   
 }
 @media screen and (min-width:992px){
-  main{
-    width: 100%;
-    height:100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  .container{
+    .container{
     width: 80%;
     height:95%;
     

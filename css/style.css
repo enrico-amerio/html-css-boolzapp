@@ -178,11 +178,11 @@ body{
   }
   .col.left{
     display:block;
-    width: 10%;
+    width: 65px;
     
   }
   .col.right{
-    width: 90%;
+    width: calc(100% - 65px);
   }
   .col.right .top-right, .bottom-logo{
     display: flex;
@@ -205,12 +205,12 @@ body{
     margin: 0 auto;
   }
   .col.left{
-    width: 30%;
+    width: 275px;
     
     
   }
   .col.right{
-    width: 70%;
+    width: calc(100% - 275px);
   }
   .d-none{
     display: flex;

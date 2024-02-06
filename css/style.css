@@ -141,10 +141,10 @@ main{
   border-radius: 10px;
   margin-top:10px ;
   font-size: 0.8rem;
-  position: relative;
+  
 }
 .message p{
-  padding: 15px;
+  padding: 15px 10px 15px 15px;
 }
 .message:first-of-type{
   margin-top: 30px;
@@ -158,19 +158,20 @@ main{
   margin-left: auto;
   margin-right: 25px;
 }
+.message-right{
+  width: 5%;
+  padding: 10px 30px 10px 0;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.message-left{
+  width: 95%;
+}
 .message-time, .message-menu{
   color: #bbc3bb;
 }
 .message-time{
-  position: absolute;
   font-size: 0.5rem;
-  left: 237px;
-  bottom:5px;
-}
-.message-menu{
-  position: absolute;
-  left: 255px;
-  bottom:138px;
 }
 .type input{
   width: 90%;
